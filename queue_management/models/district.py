@@ -5,4 +5,4 @@ class District(models.Model):
     _description = "model for districts"
 
     name = fields.Char(string="Name", required=True)
-    description = fields.Text(string="description")
+    description = fields.Text(string="Description")
