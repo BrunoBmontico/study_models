@@ -1,8 +1,8 @@
 from odoo import fields, models
 
 class Attendant(models.Model):
-    _name = "Attendant.model"
+    _name = "attendant.model"
     _description = "model for attendants"
 
-    name = fields.Char(string="Attendant Name", required=True)
+    name = fields.Char(string="Name", required=True)
     description = fields.Text(string="Description")

@@ -4,5 +4,5 @@ class Scheduling(models.Model):
     _name = "scheduling.model"
     _description = "model for appointments"
 
-    name = fields.Char(string="Scheduling Name", required=True)
+    name = fields.Char(string="Name", required=True)
     description = fields.Text(string="description")
