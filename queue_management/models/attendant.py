@@ -5,4 +5,9 @@ class Attendant(models.Model):
     _description = "model for attendants"
 
     name = fields.Char(string="Name", required=True)
-    description = fields.Text(string="Description")
+
+    scheduling_ids = fields.One2many(
+        comodel_name="scheduling.model",
+        inverse_name="attendant_id",
+        string="Appointments"
+    )
