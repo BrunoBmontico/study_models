@@ -12,4 +12,4 @@ class Cep(models.Model):
         column1="cep_id",
         column2="district_id", 
         string="Districts"
-        )
+    )

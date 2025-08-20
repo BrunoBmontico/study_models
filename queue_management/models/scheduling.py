@@ -10,7 +10,7 @@ class Scheduling(models.Model):
     unit_id = fields.Many2one(
         comodel_name="unit.model",
         string="Unit"
-        )
+    )
     
     group_id = fields.Many2one(
         comodel_name="group.model",

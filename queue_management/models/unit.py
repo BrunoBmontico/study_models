@@ -13,13 +13,13 @@ class Unit(models.Model):
         column1="unit_id",
         column2="district_id",
         string="Districts"
-        )
+    )
     
     group_ids = fields.One2many(
         comodel_name="group.model", 
         inverse_name="unit_id", 
         string="Groups"
-        )
+    )
     
     attendant_ids = fields.Many2many(
         comodel_name="attendant.model",
@@ -34,3 +34,5 @@ class Unit(models.Model):
         inverse_name="unit_id",
         string="Appointments"
     )
+
+    

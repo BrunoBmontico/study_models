@@ -13,22 +13,26 @@ class Prefix(models.model):
         comodel_name="group.model",
         inverse_name="prefix_id",
         string="Groups"
-        )
+    )
     
 class Group(models.Model):
     _name = "group.model"
     _description = "Model for Groups"
 
     name = fields.Char(string="Name", required=True)
-    unit_id = fields.Many2one(comodel_name='unit.model', string="Unit")
     code_amount = fields.Int(string="Code Amount", required=True)
     description = fields.Text(string="Description")
+
+    unit_id = fields.Many2one(
+        comodel_name='unit.model',
+        string="Unit"
+    )
 
     prefix_id = fields.Many2one(
         comodel_name='prefix.group.model',
         string="Prefix",
         required=True
-        )
+    )
     
     attendant_ids = fields.Many2many(
         comodel_name="attendant.model",
