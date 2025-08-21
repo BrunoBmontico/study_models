@@ -12,8 +12,12 @@
     'auto_install':False,
 
     'data':[
+        # menus
         'views/menu_root.xml',
         'views/menus_customer_service.xml',
-        'views/menus_module_config.xml'
+        'views/menus_module_config.xml',
+
+        # tree
+        'views/tree_customer_service.xml',
     ]
 }

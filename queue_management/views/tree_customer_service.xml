@@ -1,0 +1,60 @@
+<odoo>
+
+    <!-- Service Customer > Appointments Tree -->
+    <record id="tree_queue_appointments" model="ir.ui.view">
+        <field name="name">tree.queue.appointments</field>
+        <field name="model">queue.appointment</field>
+        <field name="arch" type="xml">
+        
+            <tree>
+                <field name="applicant"/>
+                <field name="unit_id"/>
+                <field name="group_id"/>
+                <field name="attendant_id"/>
+                <field name="appointment_date"/>
+            </tree>
+        
+        </field>
+    </record>
+
+    <!-- Service Customer > Units Tree -->
+    <record id="tree_queue_units" model="ir.ui.view">
+        <field name="name">tree.queue.units</field>
+        <field name="model">queue.unit</field>
+        <field name="arch" type="xml">
+        
+            <tree>
+                <field name="name"/>
+            </tree>
+        
+        </field>
+    </record>
+
+    <!-- Service Customer > Groups Tree -->
+    <record id="tree_queue_groups" model="ir.ui.view">
+        <field name="name">tree.queue.groups</field>
+        <field name="model">queue.group</field>
+        <field name="arch" type="xml">
+        
+            <tree>
+                <field name="name"/>
+                <field name="unit_id"/>
+            </tree>
+        
+        </field>
+    </record>
+
+    <!-- Service Customer > Attendants Tree -->
+    <record id="tree_queue_attendants" model="ir.ui.view">
+        <field name="name">tree.queue.attendants</field>
+        <field name="model">queue.attendant</field>
+        <field name="arch" type="xml">
+        
+            <tree>
+                <field name="name"/>
+            </tree>
+        
+        </field>
+    </record>
+
+</odoo>
