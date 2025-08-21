@@ -3,7 +3,7 @@
     <record id="action_queue_appointments" model="ir.actions.act_window">
         <field name="name">Appointments</field>
         <field name="res_model">queue.scheduling</field>
-        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <menuitem id="menu_root_queue" name="Queue Management"/>
