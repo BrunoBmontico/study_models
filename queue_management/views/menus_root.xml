@@ -1,12 +1,56 @@
 <odoo>
+    <!-- menu root -->
+    <menuitem id="menu_root_queue" name="Queue Management"/>
 
+    <!-- menu of service customer -->
+    <menuitem id="menu_service_queue" name="Customer Service" parent="menu_root_queue"/>
+
+    <!-- service customer > appointments Menu -->
     <record id="action_queue_appointments" model="ir.actions.act_window">
-        <field name="name">Appointments</field>
-        <field name="res_model">queue.scheduling</field>
+        <field name="name">appointments</field>
+        <field name="res_model">queue.appointment</field>
         <field name="view_mode">tree,form</field>
     </record>
+    <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_service_queue" action="action_queue_appointments"/>
 
-    <menuitem id="menu_root_queue" name="Queue Management"/>
+    <!-- Scheduling Menu -->
+    <record id="action_queue_appointments" model="ir.actions.act_window">
+        <field name="name">appointments</field>
+        <field name="res_model">queue.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_root_queue" action="action_queue_appointments"/>
+
+    <!-- Scheduling Menu -->
+    <record id="action_queue_appointments" model="ir.actions.act_window">
+        <field name="name">appointments</field>
+        <field name="res_model">queue.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_root_queue" action="action_queue_appointments"/>
+
+    <!-- Scheduling Menu -->
+    <record id="action_queue_appointments" model="ir.actions.act_window">
+        <field name="name">appointments</field>
+        <field name="res_model">queue.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_root_queue" action="action_queue_appointments"/>
+
+    <!-- Scheduling Menu -->
+    <record id="action_queue_appointments" model="ir.actions.act_window">
+        <field name="name">appointments</field>
+        <field name="res_model">queue.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_root_queue" action="action_queue_appointments"/>
+
+    <!-- Scheduling Menu -->
+    <record id="action_queue_appointments" model="ir.actions.act_window">
+        <field name="name">appointments</field>
+        <field name="res_model">queue.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
     <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_root_queue" action="action_queue_appointments"/>
 
 </odoo>

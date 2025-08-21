@@ -1,11 +1,11 @@
 from odoo import fields, models
 
-class Scheduling(models.Model):
-    _name = "queue.scheduling"
+class Appointment(models.Model):
+    _name = "queue.Appointment"
     _description = "model for appointments"
 
     applicant = fields.Char(string="Applicant", required=True)
-    scheduling_date = fields.Date(string="Scheduling Date", required=True)
+    appointment_date = fields.Date(string="Appointment Date", required=True)
 
     unit_id = fields.Many2one(
         comodel_name="queue.unit",

@@ -29,8 +29,8 @@ class Unit(models.Model):
         string="Attendants"
     )
     
-    scheduling_ids = fields.One2many(
-        comodel_name="queue.scheduling",
+    appointment_ids = fields.One2many(
+        comodel_name="queue.appointment",
         inverse_name="unit_id",
         string="Appointments"
     )

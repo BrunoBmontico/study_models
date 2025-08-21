@@ -6,8 +6,8 @@ class Attendant(models.Model):
 
     name = fields.Char(string="Name", required=True)
 
-    scheduling_ids = fields.One2many(
-        comodel_name="queue.scheduling",
+    appointment_ids = fields.One2many(
+        comodel_name="queue.appointment",
         inverse_name="attendant_id",
         string="Appointments"
     )
