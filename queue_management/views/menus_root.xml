@@ -1,0 +1,12 @@
+<odoo>
+
+    <record id="action_queue_appointments" model="ir.actions.act_window">
+        <field name="name">Appointments</field>
+        <field name="res_model">queue.scheduling</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <menuitem id="menu_root_queue" name="Queue Management"/>
+    <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_root_queue" action="action_queue_appointments"/>
+
+</odoo>
