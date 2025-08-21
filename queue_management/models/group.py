@@ -29,7 +29,7 @@ class Group(models.Model):
     )
 
     prefix_id = fields.Many2one(
-        comodel_name='queue.Prefix.group',
+        comodel_name='queue.prefix.group',
         string="Prefix",
         required=True
     )
