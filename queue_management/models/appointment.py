@@ -1,7 +1,7 @@
 from odoo import fields, models
 
 class Appointment(models.Model):
-    _name = "queue.Appointment"
+    _name = "queue.appointment"
     _description = "model for appointments"
 
     applicant = fields.Char(string="Applicant", required=True)

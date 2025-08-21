@@ -3,4 +3,4 @@
 # from . import cep
 # from . import district
 # from . import attendant
-from . import Appointment
+from . import appointment
