@@ -1,13 +1,13 @@
 from odoo import fields, models
 
-class Prefix(models.model):
-    _name = "queue.Prefix.group"
+class Prefix(models.Model):
+    _name = "queue.prefix.group"
     _description = "Model for prefix codes"
 
     name = fields.Char(string="Name", required=True)
     prefix = fields.Char(string="Prefix", required=True)
-    increment = fields.Int(string="Increment", default=1, required=True)
-    digit = fields.Int(string="Digit", required=True)
+    increment = fields.Integer(string="Increment", default=1, required=True)
+    digit = fields.Integer(string="Digit", required=True)
     
     group_ids = fields.One2many(
         comodel_name="queue.group",
@@ -20,7 +20,7 @@ class Group(models.Model):
     _description = "Model for Groups"
 
     name = fields.Char(string="Name", required=True)
-    code_amount = fields.Int(string="Code Amount", required=True)
+    code_amount = fields.Integer(string="Code Amount", required=True)
     description = fields.Text(string="Description")
 
     unit_id = fields.Many2one(

@@ -12,6 +12,8 @@
     'auto_install':False,
 
     'data':[
-        'views/menus_root.xml',
+        'views/menu_root.xml',
+        'views/menus_customer_service.xml',
+        'views/menus_module_config.xml'
     ]
 }

@@ -1,0 +1,6 @@
+<odoo>
+
+    <!-- menu root -->
+    <menuitem id="menu_root_queue" name="Queue Management"/>
+
+</odoo>

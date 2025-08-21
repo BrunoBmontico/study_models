@@ -1,0 +1,38 @@
+<odoo>
+
+    <!-- menu of Service Customer -->
+    <menuitem id="menu_queue_service" name="Customer Service" parent="menu_root_queue"/>
+
+    <!-- Service Customer > appointments Menu -->
+    <record id="action_queue_appointments" model="ir.actions.act_window">
+        <field name="name">Appointments</field>
+        <field name="res_model">queue.appointment</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <menuitem id="menu_queue_appointments" name="Appointments" parent="menu_queue_service" action="action_queue_appointments"/>
+
+    <!-- Service Customer > Units Menu -->
+    <record id="action_queue_units" model="ir.actions.act_window">
+        <field name="name">Units</field>
+        <field name="res_model">queue.unit</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <menuitem id="menu_queue_units" name="Units" parent="menu_queue_service" action="action_queue_units"/>
+
+    <!-- Service Customer > Groups Menu -->
+    <record id="action_queue_group" model="ir.actions.act_window">
+        <field name="name">Groups</field>
+        <field name="res_model">queue.group</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <menuitem id="menu_queue_groups" name="Groups" parent="menu_queue_service" action="action_queue_group"/>
+
+    <!-- Service Customer > Attendant Menu -->
+    <record id="action_queue_attendant" model="ir.actions.act_window">
+        <field name="name">Attendant</field>
+        <field name="res_model">queue.attendant</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <menuitem id="menu_queue_attendant" name="Attendant" parent="menu_queue_service" action="action_queue_attendant"/>
+
+</odoo>

@@ -1,0 +1,22 @@
+<odoo>
+
+    <!-- menu of Module Configs -->
+    <menuitem id="menu_queue_config" name="Module Config" parent="menu_root_queue"/>
+
+    <!-- Module Config > CEP Menu -->
+    <record id="action_queue_ceps" model="ir.actions.act_window">
+        <field name="name">CEPs</field>
+        <field name="res_model">queue.cep</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <menuitem id="menu_queue_ceps" name="CEPs" parent="menu_queue_config" action="action_queue_ceps"/>
+
+    <!-- Module Config > District Menu -->
+    <record id="action_queue_Districts" model="ir.actions.act_window">
+        <field name="name">Districts</field>
+        <field name="res_model">queue.district</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+    <menuitem id="menu_queue_Districts" name="Districts" parent="menu_queue_config" action="action_queue_Districts"/>
+
+</odoo>
