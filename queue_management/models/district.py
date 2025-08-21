@@ -6,3 +6,11 @@ class District(models.Model):
 
     name = fields.Char(string="Name", required=True)
     description = fields.Text(string="Description")
+
+    cep_ids = fields.Many2many(
+        comodel_name="queue.district",
+        relation="cep_district_rel",
+        column1="district_id",
+        column2="cep_id", 
+        string="Districts"
+    )

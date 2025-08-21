@@ -19,5 +19,6 @@
 
         # tree
         'views/tree_customer_service.xml',
+        'views/tree_module_config.xml',
     ]
 }

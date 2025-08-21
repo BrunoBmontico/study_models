@@ -11,5 +11,5 @@ class Cep(models.Model):
         relation="cep_district_rel",
         column1="cep_id",
         column2="district_id", 
-        string="Districts"
+        string="CEPs"
     )
